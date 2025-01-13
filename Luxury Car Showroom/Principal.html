@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Luxury Cars</title>
+        <style>
+            body {
+              margin: 0;
+              min-height: 100%;
+              background:url(./imagenes/fondo.jpg) fixed;
+            }
+
+            header {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              z-index: 1;
+              background-color: #333;
+              color: #fff;
+              padding: 10px;
+              font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .logo {
+              display: flex;
+              align-items: center;
+              font-family: Magneto, Helvetica, sans-serif;
+            }
+
+            .logo img {
+              margin-right: 10px;
+              width: 70px;
+            }
+
+            h1.titulo {
+              margin: 0;
+              font-size: 40px;
+              font-weight: bold;
+              line-height: 40px;
+            }
+
+            header.cabecera nav {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+
+            header.cabecera nav ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+            }
+
+            header.cabecera nav li {
+              display: inline-block;
+              margin-left: 20px;
+            }
+
+            header.cabecera nav a {
+              color: #fff;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 20px;
+              padding: 5px;
+              border-radius: 5px;
+              transition: background-color 0.5s;
+            }
+            
+
+            header.cabecera nav a:hover {
+              background-color: #a8a2a2;
+            }
+
+            /* Estilos para el seccion hero */
+            .hero {
+              background-image: url('./imagenes/tesla-model-s-plaid-4.jpg');
+              background-size: cover;
+              background-position: center;
+              height: 400px;
+              display: flex;
+              align-items: center;
+            }
+
+            .hero-text {
+              text-align: center;
+              width: 100%;
+              height: 0;
+            }
+
+            .hero-text h2 {
+              color: #fff;
+              font-size: 5em;
+              margin: 0;
+              font-weight: bold;
+              text-shadow: 3px 7px 3px rgba(0,0,0,0.6);
+              font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              letter-spacing: 2px;
+            }
+
+            /*Estilos para elemento flex*/
+
+            .contenedor-flex{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                grid-template-columns: auto auto auto;
+                padding: 50px;
+            }
+
+            .contenedor-flex > div{
+                background-color: transparent;
+                text-align: center;
+                font-size: 30px;
+                margin: 60px;
+                margin-bottom: 30px;
+            }
+
+            .contenedor-flex a{
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              color: black;
+              background-color: lightgray;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 20px;
+              padding: 12px;
+              border: grey 3px solid;
+              border-radius: 10px;
+              transition: background-color 0.5s;
+            }
+
+            .contenedor-flex a:hover{
+              background-color: skyblue;
+            }
+
+            .contenedor-flex p{
+              font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              font-weight:600 ;
+              margin-bottom: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="cabecera">
+            <div class="logo">
+                <img src="./imagenes/FAVICON.png">
+                <h1 class="titulo">Luxury Cars</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Modelos</a></li>
+                    <li><a href="UltimasNoticias.html">Últimas noticias</a></li>
+                    <li><a href="SobreNosotros.html">Sobre nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Modelos</h2>
+            </div>
+        </section>
+        <section class="modelos">
+            <div class="contenedor-flex">
+                <div>
+                  <img src="./imagenes/golfgti.jpg">
+                  <br>
+                  <p>Volkswagen Golf 8 GTI</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=qvYa-mFkCfQ">Ver vídeo</a>
+                </div>
+                <div>
+                  <img src="./imagenes/taycan.jpg">
+                  <br>
+                  <p>Porsche Taycan Turbo S</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=MZbkHULwwO4">Ver vídeo</a>
+                </div>
+                <div>
+                  <img src="./imagenes/clasec.jpg">
+                  <br>
+                  <p>Mercedes-Benz Clase C 2021</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=9R7Wl57F1eo">Ver vídeo</a>
+                </div>
+                <div>
+                  <img src="./imagenes/etron.jpg">
+                  <br>
+                  <p>Audi E-Tron GT 2021</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=yhf9ThUWjIg">Ver vídeo</a>
+                </div>
+                <div>
+                  <img src="./imagenes/formentor.jpg">
+                  <br>
+                  <p>Cupra Formentor e-Hybrid</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=n7mH4XsiQ0I">Ver vídeo</a>
+                </div>
+                <div>
+                  <img src="./imagenes/mache.jpg">
+                  <br>
+                  <p>Ford Mustang Mach-E</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=GHgLrg9ee98">Ver vídeo</a>
+                </div>
+                <div >
+                  <img src="./imagenes/m5cs.jpg">
+                  <br>
+                  <p>BMW M5 CS Competition 2021</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=pkXdLnQ4Ic0">Ver vídeo</a>
+                </div>
+                <div>
+                  <img src="./imagenes/m4c.jpg">
+                  <br>
+                  <p>BMW M4 Competition 2021</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=MoS_8QNhmsg">Ver vídeo</a>
+                </div>
+                <div>
+                  <img src="./imagenes/teslasplaid.jpeg">
+                  <br>
+                  <p>Tesla Model S Plaid</p>
+                  <br>
+                  <a href="https://www.youtube.com/watch?v=4hipXODrTpc&t=326s">Ver vídeo</a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
